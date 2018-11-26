@@ -52,6 +52,12 @@ public class DirectorTest {
         assertEquals(120000, rob.getBudget(), 0.00001);
     }
 
+    @Test
+    public void cannotAddNegativeSalary(){
+        rob.raiseSalary(-4023.45);
+        assertEquals(60000, rob.getSalary(), 0.000001);
+    }
+
 
 
 }
