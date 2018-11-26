@@ -30,6 +30,7 @@ public abstract class Employee {
     }
 
     public double payBonus(){
+
        return (0.01 * this.salary);
     }
 
