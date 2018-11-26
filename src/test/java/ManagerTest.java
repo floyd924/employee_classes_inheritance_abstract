@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class ManagerTest {
 
-    Employee employee;
+    Manager employee;
 
     @Before
     public void setup(){
@@ -39,5 +39,11 @@ public class ManagerTest {
     public void canPayBonus(){
         double bonus = employee.payBonus();
         assertEquals(30300, (bonus + employee.getSalary()), 0.00001);
+    }
+
+    @Test
+    public void canGetDeptName(){
+
+        assertEquals("Admissions", employee.getDeptName());
     }
 }
